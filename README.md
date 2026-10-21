@@ -1,3 +1,2 @@
-# neihu_traffic_heatmap_dashboard
 streamlit
 plotly
