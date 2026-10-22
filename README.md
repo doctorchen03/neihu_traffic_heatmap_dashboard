@@ -34,10 +34,12 @@ $$\mathbf{PTCI} = \min\left(100, \; 100 \times \left[ w_1 \cdot \left(1 - \frac{
 
 ### 變數與權重配置：
 
+* **test** ($\text{Days}_{\text{work}}$)
 * **車速落差感** ($1 - \frac{v_{\text{act}}}{v_{\text{free}}}$)：敏感度次方 $\alpha = 1.5$，$w_1 = 0.45$。車速降至速限 30% 以下時，延滯感呈指數暴增。
 * **容量壓迫感** ($\frac{V}{C}$)：飽和次方 $\beta = 1.2$，$w_2 = 0.35$。當 $\frac{V}{C} \ge 1.0$ 時帶來空間窒息感。
+* **test** ($\text{Days}_{\text{work}}$)
 * **走走停停衝擊波** ($\frac{\text{Occupancy}}{\text{Occ}_{\text{crit}}}$)：臨界佔空率 $\text{Occ}_{\text{crit}} \approx 25\%$，$w_3 = 0.20$。
-* **test** ($ \text{Days}_{\text{work}} $)
+* **test** ($\text{Days}_{\text{work}}$)
 * **晨尖峰時間壓力加權** ($W_{\text{time}}$)：`08:00-08:45` 打卡生死線加權 $W_{\text{time}} = 1.25$；`07:30-08:00` 加權 $1.10$；其餘時段 $1.00$。
 
 ---
