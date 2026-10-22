@@ -1,4 +1,4 @@
-# 🚘 內湖平日晨尖峰內科車流熱力儀表板與政企協商決策系統
+<img width="857" height="51" alt="image" src="https://github.com/user-attachments/assets/ac0817e5-21bb-4bff-835f-1bc8af10a4f0" /># 🚘 內湖平日晨尖峰內科車流熱力儀表板與政企協商決策系統
 > **Neihu Traffic Heatmap Dashboard & Corporate Negotiation Platform**
 > 
 > 結合開放資料（TDX / VD 車輛偵測器）、主觀「體感塞車指數 (PTCI)」演算法與 ESG Scope 3 減碳引擎，提供臺北市政府與內科企業推動「分批上班、彈性工時」的數據後盾。
@@ -36,6 +36,7 @@ $$\mathbf{PTCI} = \min\left(100, \; 100 \times \left[ w_1 \cdot \left(1 - \frac{
 * **車速落差感** ($1 - \frac{v_{\text{act}}}{v_{\text{free}}}$)：敏感度次方 $\alpha = 1.5$，$w_1 = 0.45$。車速降至速限 30% 以下時，延滯感呈指數暴增。
 * **容量壓迫感** ($\frac{V}{C}$)：飽和次方 $\beta = 1.2$，$w_2 = 0.35$。當 $\frac{V}{C} \ge 1.0$ 時帶來空間窒息感。
 * **走走停停衝擊波** ($\frac{\text{Occupancy}}{\text{Occ}_{\text{crit}}}$)$：臨界佔空率 $\text{Occ}_{\text{crit}} \approx 25\%$，$w_3 = 0.20$。
+* **走走停停衝擊波** ($\frac{\text{Occupancy}}{\text{Occ}_{\text{crit}}}$)：臨界佔空率 $\text{Occ}_{\text{crit}} \approx 25\%$，$w_3 = 0.20$。
 * **晨尖峰時間壓力加權** ($W_{\text{time}}$)：`08:00–08:45` 打卡生死線加權 $W_{\text{time}} = 1.25$；`07:30–08:00` 加權 $1.10$；其餘時段 $1.00$。
 
 ---
